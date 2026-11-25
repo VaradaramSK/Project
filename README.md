@@ -55,31 +55,6 @@ The system consists of three main components:
 2. **Backend:** Node.js and Express.js API for authentication, experiment management, database operations, and communication with the machine-learning service.
 3. **Machine Learning Service:** Python-based FastAPI service that performs data preprocessing, missingness generation, imputation, evaluation, and downstream prediction.
 
-### Workflow
-
-Researcher  
-↓  
-React Frontend  
-↓  
-Node.js / Express Backend  
-↓  
-FastAPI Machine Learning Service  
-↓  
-Fixed MEPS Dataset  
-↓  
-Missingness Simulation  
-↓  
-Imputation Methods  
-↓  
-Imputation Evaluation (RMSE / MAE)  
-↓  
-Downstream Prediction  
-↓  
-Prediction Evaluation (AUC)  
-↓  
-Results Stored in MongoDB  
-↓  
-Interactive Results Dashboard
 
 ## Output
 
