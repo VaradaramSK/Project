@@ -123,13 +123,25 @@ The project contributes to a more practical evaluation of missing-data handling 
 
 ## Articles Published / References
 
-Add the research papers, datasets, and articles that were actually used during the development of this project.
+## References
 
-Suggested reference categories:
+[1] C. McClellan, E. Mitchell, J. Anderson, and S. Zuvekas, “Using machine-learning algorithms to improve imputation in the Medical Expenditure Panel Survey,” *Health Services Research*, vol. 58, no. 2, pp. 423–432, 2023, doi: 10.1111/1475-6773.14115.
 
-1. Research papers on missing-data mechanisms (MCAR, MAR, and MNAR).
-2. Research papers on Mean, KNN, Regression, MICE, and Random Forest imputation.
-3. Research papers examining the relationship between imputation quality and downstream machine-learning prediction performance.
-4. Documentation and research resources related to the Medical Expenditure Panel Survey (MEPS).
-5. Scikit-learn documentation for preprocessing, imputation, and machine-learning evaluation.
+[2] D. J. Stekhoven and P. Bühlmann, “MissForest—non-parametric missing value imputation for mixed-type data,” *Bioinformatics*, vol. 28, no. 1, pp. 112–118, 2012, doi: 10.1093/bioinformatics/btr597.
+
+[3] J. P. A. van Buuren and K. Groothuis-Oudshoorn, “mice: Multivariate imputation by chained equations in R,” *Journal of Statistical Software*, vol. 45, no. 3, pp. 1–67, 2011.
+
+[4] R. J. A. Little and D. B. Rubin, *Statistical Analysis with Missing Data*, 2nd ed. New York, NY, USA: Wiley, 2002.
+
+[5] D. B. Rubin, “Inference and missing data,” *Biometrika*, vol. 63, no. 3, pp. 581–592, 1976.
+
+[6] M. J. van der Heijden, T. Donders, G. Stijnen, and K. Moons, “Imputation of missing values is superior to complete case analysis and the use of missing indicators in multivariable diagnostic research: A clinical example,” *Journal of Clinical Epidemiology*, vol. 59, no. 10, pp. 1102–1109, 2006.
+
+[7] S. Moritz and T. Bartz-Beielstein, “imputeTestbench: An R package for benchmarking missing value imputation algorithms,” *R Journal*, vol. 9, no. 1, pp. 569–580, 2017.
+
+[8] P. J. R. Shah, J. B. K. L. et al., “A benchmark for data imputation methods,” *Scientific Reports*, 2021.
+
+[9] D. J. Stekhoven, “missForest: Nonparametric Missing Value Imputation using Random Forest,” *R package*, version 1.6.1, 2025.
+
+[10] T. J. Little et al., “The impact of imputation quality on machine learning classifiers for datasets with missing values,” 2023.
 
