@@ -1,61 +1,135 @@
-## Beyond Accuracy: Imputation's Real Impact on Downstream prediction
+# Beyond Accuracy: Imputation's Real Impact on Downstream Prediction
 
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+## Description
+
+A research-based platform for evaluating missing-data imputation techniques and analyzing their impact on downstream machine learning prediction performance using the MEPS dataset. The system compares multiple imputation methods under different missing-data rates and missingness mechanisms to determine whether better imputation accuracy leads to better predictive outcomes.
 
 ## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+
+**Beyond Accuracy: Imputation's Real Impact on Downstream Prediction** is a project designed to investigate the real-world impact of missing-data imputation techniques on machine learning prediction tasks. Traditional imputation evaluation focuses primarily on how accurately missing values are reconstructed. However, an imputation method with lower reconstruction error does not necessarily produce better downstream prediction results.
+
+This project addresses this problem by evaluating five imputation methods—Mean, K-Nearest Neighbors (KNN), Regression, Multiple Imputation by Chained Equations (MICE), and Random Forest—under different missing-data rates and missingness mechanisms, including MCAR and MNAR.
+
+Using a fixed MEPS dataset, the system artificially introduces missing values, applies selected imputation techniques, evaluates imputation quality using RMSE and MAE, and measures downstream prediction performance using metrics such as AUC. The results are presented through an interactive dashboard, allowing researchers to compare methods and understand how missingness affects prediction performance.
 
 ## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+
+- Uses a fixed MEPS dataset for consistent and reproducible experiments.
+- Supports multiple missing-data rates: 5%, 15%, 30%, 50%, 60%, and 70%.
+- Simulates different missingness mechanisms, including MCAR and MNAR.
+- Implements five imputation techniques:
+  - Mean Imputation
+  - K-Nearest Neighbors (KNN)
+  - Regression Imputation
+  - Multiple Imputation by Chained Equations (MICE)
+  - Random Forest Imputation
+- Evaluates imputation quality using RMSE and MAE.
+- Evaluates downstream prediction performance using AUC.
+- Compares imputation methods across different missingness conditions.
+- Provides interactive visualizations and result dashboards.
+- Tracks experiment progress and status.
+- Allows researchers to export imputed datasets and experiment results.
+- Supports reproducible experimentation and method comparison.
 
 ## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+
+- **Operating System:** Windows 10/11 or Linux (64-bit).
+- **Programming Language:** Python 3.8 or later for machine learning and data processing.
+- **Frontend Development:** React.js with Vite.
+- **Backend Development:** Node.js and Express.js.
+- **Database:** MongoDB for storing users, experiment configurations, results, and reports.
+- **Machine Learning Frameworks:** Scikit-learn for imputation and prediction models.
+- **Data Processing Libraries:** Pandas and NumPy for dataset processing and numerical computation.
+- **Statistical Libraries:** SciPy and Statsmodels for statistical operations where required.
+- **Visualization:** Recharts for interactive charts and result visualization.
+- **API Development:** FastAPI for communication with the Python machine-learning service.
+- **Authentication:** JWT and bcryptjs for secure user authentication.
+- **Version Control:** Git and GitHub for source-code management.
+- **IDE:** Visual Studio Code for development, debugging, and project management.
 
 ## System Architecture
-<!--Embed the system architecture diagram as shown below-->
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+The system consists of three main components:
 
+1. **Frontend:** React.js application for dataset viewing, experiment configuration, progress monitoring, and result visualization.
+2. **Backend:** Node.js and Express.js API for authentication, experiment management, database operations, and communication with the machine-learning service.
+3. **Machine Learning Service:** Python-based FastAPI service that performs data preprocessing, missingness generation, imputation, evaluation, and downstream prediction.
+
+### Workflow
+
+Researcher  
+↓  
+React Frontend  
+↓  
+Node.js / Express Backend  
+↓  
+FastAPI Machine Learning Service  
+↓  
+Fixed MEPS Dataset  
+↓  
+Missingness Simulation  
+↓  
+Imputation Methods  
+↓  
+Imputation Evaluation (RMSE / MAE)  
+↓  
+Downstream Prediction  
+↓  
+Prediction Evaluation (AUC)  
+↓  
+Results Stored in MongoDB  
+↓  
+Interactive Results Dashboard
 
 ## Output
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+### Output 1 – Missingness Configuration
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+The researcher selects the missing-data rate, missingness mechanism, imputation methods, and prediction task before running the experiment.
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+### Output 2 – Experiment Progress
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+The system displays the current experiment status, progress percentage, and processing stage while the experiment is running.
 
+### Output 3 – Imputation Performance Comparison
+
+The system compares the imputation techniques based on RMSE and MAE across different missing-data rates and missingness mechanisms.
+
+### Output 4 – Downstream Prediction Performance
+
+The system visualizes prediction performance using AUC and allows comparison of the downstream impact of different imputation techniques.
+
+### Output 5 – Results Dashboard
+
+The results dashboard provides a comprehensive comparison of the selected methods using tables, charts, and experiment summaries.
+
+*Actual screenshots and measured results should be added after implementation and evaluation.*
 
 ## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+The project aims to demonstrate that imputation quality should not be evaluated solely based on reconstruction accuracy. By comparing RMSE and MAE with downstream prediction performance, the system investigates whether the imputation method that reconstructs missing values most accurately also produces the best predictive results.
 
-## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+The experiments help identify how imputation performance changes under increasing missing-data rates and different missingness mechanisms, particularly MCAR and MNAR.
 
+The platform provides researchers with a systematic framework for:
 
+- Comparing different imputation techniques.
+- Understanding the effects of missing-data rates on prediction performance.
+- Investigating differences between MCAR and MNAR conditions.
+- Identifying imputation methods that perform well for downstream prediction.
+- Evaluating the relationship between imputation accuracy and predictive effectiveness.
 
+The project contributes to a more practical evaluation of missing-data handling in machine learning by emphasizing the impact of imputation on the final prediction task rather than focusing only on reconstruction accuracy.
 
+## Articles Published / References
+
+Add the research papers, datasets, and articles that were actually used during the development of this project.
+
+Suggested reference categories:
+
+1. Research papers on missing-data mechanisms (MCAR, MAR, and MNAR).
+2. Research papers on Mean, KNN, Regression, MICE, and Random Forest imputation.
+3. Research papers examining the relationship between imputation quality and downstream machine-learning prediction performance.
+4. Documentation and research resources related to the Medical Expenditure Panel Survey (MEPS).
+5. Scikit-learn documentation for preprocessing, imputation, and machine-learning evaluation.
 
