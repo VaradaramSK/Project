@@ -123,7 +123,6 @@ The project contributes to a more practical evaluation of missing-data handling 
 
 ## Articles Published / References
 
-## References
 
 - C. McClellan, E. Mitchell, J. Anderson, and S. Zuvekas, “Using machine-learning algorithms to improve imputation in the Medical Expenditure Panel Survey,” *Health Services Research*, vol. 58, no. 2, pp. 423–432, 2023, doi: 10.1111/1475-6773.14115.
 
