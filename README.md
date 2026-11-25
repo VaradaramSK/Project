@@ -1,2 +1,2 @@
-# Beyond Accuracy: Imputation's Real Imapct on Downstream prediction
+# Beyond Accuracy: Imputation's Real Impact on Downstream prediction
 Final year Project
